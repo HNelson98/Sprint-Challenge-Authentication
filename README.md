@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [Y] Create a forked copy of this project.
+- [Y] Add your _Team Lead_ as collaborator on Github.
+- [Y] Clone your forked version of the Repository.
+- [Y] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [Y] Implement the project on this Branch, committing changes regularly.
+- [Y] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -38,13 +38,21 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is the purpose of using _sessions_?
+- [Y] What is the purpose of using _sessions_?
 
-- [ ] What does bcrypt do to help us store passwords in a secure manner.
+        Sessions allow for the use of cookies and helps keep the user logged in, while maintaining security of a website.
 
-- [ ] What does bcrypt do to slow down attackers?
+- [Y] What does bcrypt do to help us store passwords in a secure manner.
 
-- [ ] What are the three parts of the JSON Web Token?
+    it hashes the password in a way that is one way, unlike what tokens do
+
+- [Y] What does bcrypt do to slow down attackers?
+
+    It makes it much more difficult to sort out the password or other sensative information by hashing what you tell it to.
+
+- [Y] What are the three parts of the JSON Web Token?
+
+    The Header/Subject, the Payload, and the Signature
 
 ## Minimum Viable Product
 
