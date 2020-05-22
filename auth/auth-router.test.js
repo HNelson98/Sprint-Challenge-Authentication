@@ -29,7 +29,7 @@ test("POST /api/auth/login successful", async () => {
     const res = await request(server)
         .post("/api/auth/login")
         .send({ username: "Henry", password: "chickennuggets" });
-    //console.log(res)
+    
     expect(res.type).toBe("application/json");
     expect(res.status).toBe(200);
     expect(res.body).toHaveProperty("token")
