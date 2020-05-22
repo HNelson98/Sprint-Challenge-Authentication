@@ -12,16 +12,16 @@ module.exports = {
 
 
 function isValid(user) {
-  return Boolean( user.username && user.password && typeof user.password === "string");
+  return Boolean(user.username && user.password && typeof user.password === "string");
 }
 
 
 function restrict(req, res, next) {
   const token = req.headers.authorization
-  if (token){
+  if (token) {
     jwt.verify(token, secret.jwtSecret, (err, decodedToken) => {
-      if(err){
-        res.status(401).json({message: "invalid token"})
+      if (err) {
+        res.status(401).json({ message: "invalid token" })
       } else {
         req.subject = decodedToken.subject
         req.username = decodedToken.username
